@@ -22,7 +22,6 @@ This tool bridges the gap between controlled environment testing and real-world 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Models](#models)
-  - [Feature Extraction](#feature-extraction)
   - [Perceptron Results](#perceptron-results)
   - [SVM Results](#svm-results)
 - [GUI Application](#gui-application)
@@ -614,3 +613,76 @@ python app.py
     <img src="Results/App/svmResult1.png" width="400" alt="SVM result">
   </div>
 </div>
+
+## Models
+
+### Perceptron Results
+
+The Neural Network Perceptron achieved excellent results in gender classification, demonstrating strong generalization capabilities:
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <img src="Results/Perceptron/perceptron_results.png" width="400" alt="Perceptron Result Metrics">
+    <img src="Results/Perceptron/loss_accuracy_perceptron.png" width="400" alt="Loss and Accuracy Curves">
+    <img src="Results/Perceptron/hyperparameters_metrics_perceptron.png" width="400" alt="Hyperparameter Analysis">
+    <img src="Results/Perceptron/randomTest.png" width="400" alt="Random Test">
+  </div>
+</div>
+
+Best Model Performance:
+- Training Accuracy: 94.96%
+- Testing Accuracy: 90.48%
+- Training/Testing Difference: 4.48%
+
+Key Characteristics:
+- Learning Rate: 0.01
+- Max Iterations: 1000
+- Tolerance: 1e-4
+- Convergence achieved before maximum iterations
+- Minimal overfitting despite high model capacity
+
+### SVM Results
+
+The Support Vector Machine showed robust performance with excellent stability:
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <img src="Results/SVM/svm_results.png" width="400" alt="SVM Result Metrics">
+    <img src="Results/SVM/hyperparameters_metrics_svm.png" width="400" alt="Hyperparameter Analysis">
+    <img src="Results/SVM/correlation_analysis_svm.png" width="400" alt="Correlation Analysis">
+    <img src="Results/SVM/randomTest.png" width="400" alt="Random Test">
+  </div>
+</div>
+Best Model Performance:
+- Training Accuracy: 95.18%
+- Testing Accuracy: 89.83%
+- Training/Testing Difference: 5.35%
+
+Key Characteristics:
+- Linear kernel
+- C: 0.001
+- Gamma: scale
+- Support Vectors: 665
+- Good balance between model complexity and performance
+
+### Model Comparison
+
+<div align="center">
+  <img src="Results/comparison_metrics.png" width="600" alt="Model Comparison">
+</div>
+
+Both models demonstrated strong performance, with some key differences:
+
+1. **Accuracy**
+   - Perceptron slightly better in test accuracy (90.48% vs 89.83%)
+   - SVM slightly better in training accuracy (95.18% vs 94.96%)
+
+2. **Generalization**
+   - Perceptron: 4.48% accuracy difference
+   - SVM: 5.35% accuracy difference
+   - Both show good generalization capabilities
+
+3. **Practical Considerations**
+   - Perceptron requires GPU for optimal performance
+   - SVM works efficiently on CPU
+   - Both suitable for real-time applications
