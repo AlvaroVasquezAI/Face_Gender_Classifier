@@ -610,3 +610,16 @@ python app.py
     <img src="Results/App/svmResult1.png" width="400" alt="SVM result">
   </div>
 </div>
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+    <!-- First row -->
+    <img src="Results/App/app.png" width="400" alt="App">
+    <img src="Results/App/selectImagepng.png" width="400" alt="Select image">
+    <img src="Results/App/mainScreen.png" width="400" alt="Main screen">
+    <!-- Second row-->
+    <img src="Results/App/drawRectangule.png" width="400" alt="Draw Rectangle">
+    <img src="Results/App/perceptronResult1.png" width="400" alt="Perceptron result">
+    <img src="Results/App/svmResult1.png" width="400" alt="SVM result">
+  </div>
+</div>
