@@ -601,15 +601,6 @@ python app.py
    - Use "Predict (SVM)" or "Predict (Perceptron)" buttons to classify
    - View results in the prediction panel
    - Compare results between models
-  
-<div align="center">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-    <img src="Results/App/app.png" width="400" alt="App">
-    <img src="Results/App/drawRectangule.png" width="400" alt="Rectangule">
-    <img src="Results/App/perceptronResult1.png" width="400" alt="Perceptron result">
-    <img src="Results/App/svmResult1.png" width="400" alt="SVM result">
-  </div>
-</div>
 
 <div align="center">
   <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
