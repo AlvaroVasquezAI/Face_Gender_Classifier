@@ -21,10 +21,10 @@ This tool bridges the gap between controlled environment testing and real-world 
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
+- [GUI Application](#gui-application)
 - [Models](#models)
   - [Perceptron Results](#perceptron-results)
   - [SVM Results](#svm-results)
-- [GUI Application](#gui-application)
 - [Dataset](#dataset)
 - [Real-World Testing](#real-world-testing)
 - [Contributing](#contributing)
@@ -41,6 +41,8 @@ Grid Search Parameters:
 - Learning Rate (alpha): [0.0001, 0.001, 0.01]
 - Max Iterations: [100, 1000, 10000]
 - Stopping Tolerance: [1e-3, 1e-4, 1e-5]
+
+Top 5 models
 
 <table>
     <thead>
@@ -138,6 +140,8 @@ Grid Search Parameters:
 - C (Regularization): [0.0001, 0.001, 0.01, 0.1]
 - Kernel: ['linear', 'rbf']
 - Gamma: ['scale', 'auto', 0.1, 1]
+
+Top 5 models
 
 <table>
     <thead>
@@ -653,6 +657,7 @@ The Support Vector Machine showed robust performance with excellent stability:
     <img src="Results/SVM/randomTest.png" width="400" alt="Random Test">
   </div>
 </div>
+
 Best Model Performance:
 - Training Accuracy: 95.18%
 - Testing Accuracy: 89.83%
@@ -666,10 +671,6 @@ Key Characteristics:
 - Good balance between model complexity and performance
 
 ### Model Comparison
-
-<div align="center">
-  <img src="Results/comparison_metrics.png" width="600" alt="Model Comparison">
-</div>
 
 Both models demonstrated strong performance, with some key differences:
 
@@ -686,3 +687,72 @@ Both models demonstrated strong performance, with some key differences:
    - Perceptron requires GPU for optimal performance
    - SVM works efficiently on CPU
    - Both suitable for real-time applications
+
+## Dataset
+
+The dataset used in this project was obtained from the [Gender Classification Dataset](https://www.kaggle.com/datasets/sodiqismoilov/gender) on Kaggle. It consists of facial images carefully selected to maintain balance between classes.
+
+### Dataset Distribution
+
+<table>
+    <tr>
+        <th>Class</th>
+        <th>Training Set</th>
+        <th>Testing Set</th>
+        <th>Total Images</th>
+        <th>Percentage</th>
+    </tr>
+    <tr>
+        <td>Man</td>
+        <td>938</td>
+        <td>235</td>
+        <td>1,173</td>
+        <td>50.8%</td>
+    </tr>
+    <tr>
+        <td>Woman</td>
+        <td>907</td>
+        <td>227</td>
+        <td>1,134</td>
+        <td>49.2%</td>
+    </tr>
+    <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>1,845</strong></td>
+        <td><strong>462</strong></td>
+        <td><strong>2,307</strong></td>
+        <td><strong>100%</strong></td>
+    </tr>
+</table>
+
+### Dataset Characteristics
+
+- **Image Format**: JPG
+- **Original Dimensions**: Variable sizes
+- **Preprocessed Dimensions**: 128x128 pixels
+- **Color Space**: RGB
+- **Class Balance**: Nearly perfect (50.8% men, 49.2% women)
+- **Train/Test Split**: 80/20 ratio maintaining class distribution
+
+### Sample Images
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+    <div>
+      <img src="Data/Man/face_1.jpg" width="200" alt="Man Sample 1">
+      <p>Man Sample 1</p>
+    </div>
+    <div>
+      <img src="Data/Woman/face_1.jpg" width="200" alt="Woman Sample 1">
+      <p>Woman Sample 1</p>
+    </div>
+    <div>
+      <img src="Data/Man/face_2.jpg" width="200" alt="Man Sample 2">
+      <p>Man Sample 2</p>
+    </div>
+    <div>
+      <img src="Data/Woman/face_2.jpg" width="200" alt="Woman Sample 2">
+      <p>Woman Sample 2</p>
+    </div>
+  </div>
+</div>
