@@ -1,19 +1,22 @@
 # Face Gender Classifier
 
-A comprehensive machine learning project that implements gender classification from facial images using two distinct approaches: a Neural Network Perceptron and a Support Vector Machine (SVM). The project was developed and evaluated on a carefully curated and balanced dataset comprising 2,307 facial images (1,173 men and 1,134 women), with an 80-20 split for training and testing.
+A comprehensive **machine learning project** that implements **gender classification from facial images** using two distinct approaches: a **Neural Network Perceptron** and a **Support Vector Machine (SVM)**. The project was developed and evaluated on a carefully curated and balanced dataset comprising **2,307 facial images** (1,173 men and 1,134 women), with an **80-20 split for training and testing**.
 
-Both models demonstrate robust performance, with the Perceptron achieving 94.96% accuracy on training and 90.48% on testing, while the SVM reached 95.18% on training and 89.83% on testing. This high performance is achieved through an extensive feature extraction pipeline that combines:
+Both models demonstrate robust performance, with the Perceptron achieving 94.96% accuracy on training and **90.48%** on testing, while the SVM reached 95.18% on training and **89.83%** on testing. This high performance is achieved through an extensive feature extraction pipeline that combines:
 - Basic color analysis (RGB channels, statistical measures, and histograms)
 - Advanced texture analysis (Gray Level Co-occurrence Matrix properties)
 - Shape and gradient information (Histogram of Oriented Gradients)
 - Geometric and statistical features (entropy, moments, and spatial relationships)
 
-The project includes a user-friendly GUI application built with CustomTkinter that enables real-world testing and model comparison. Users can:
+The project includes a user-friendly **GUI application** built with CustomTkinter that enables real-world testing and model comparison. Users can:
 - Load images from local storage or web sources
 - Select face regions using an intuitive rectangle selection tool
 - Process images through both models simultaneously
 - Compare prediction results and model confidence
-- Visualize the extracted features and classification process
+
+<div align="center">
+  <img src="Results/App/perceptronResult1.png" width="1000" alt="Man Classification Example">
+</div>
 
 This tool bridges the gap between controlled environment testing and real-world application, providing insights into both models' generalization capabilities and practical effectiveness in gender classification tasks.
 ## Table of Contents
@@ -27,7 +30,6 @@ This tool bridges the gap between controlled environment testing and real-world 
   - [SVM Results](#svm-results)
 - [Dataset](#dataset)
 - [Real-World Testing](#real-world-testing)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -737,22 +739,114 @@ The dataset used in this project was obtained from the [Gender Classification Da
 ### Sample Images
 
 <div align="center">
-  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
-    <div>
-      <img src="Data/Man/face_1.jpg" width="200" alt="Man Sample 1">
-      <p>Man Sample 1</p>
-    </div>
-    <div>
-      <img src="Data/Woman/face_1.jpg" width="200" alt="Woman Sample 1">
-      <p>Woman Sample 1</p>
-    </div>
-    <div>
-      <img src="Data/Man/face_2.jpg" width="200" alt="Man Sample 2">
-      <p>Man Sample 2</p>
-    </div>
-    <div>
-      <img src="Data/Woman/face_2.jpg" width="200" alt="Woman Sample 2">
-      <p>Woman Sample 2</p>
-    </div>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="Data/Man/face_0.jpg" width="200" alt="Man Sample 1">
+        <br>
+        Man Sample 1
+      </td>
+      <td align="center">
+        <img src="Data/Woman/face_0.jpg" width="200" alt="Woman Sample 1">
+        <br>
+        Woman Sample 1
+      </td>
+      <td align="center">
+        <img src="Data/Man/face_1.jpg" width="200" alt="Man Sample 2">
+        <br>
+        Man Sample 2
+      </td>
+      <td align="center">
+        <img src="Data/Woman/face_1.jpg" width="200" alt="Woman Sample 2">
+        <br>
+        Woman Sample 2
+      </td>
+    </tr>
+  </table>
+</div>
+
+## Real-World Testing
+
+To evaluate the models' performance in real-world scenarios, we tested both the Perceptron and SVM on various facial images outside the training dataset. Below are examples of the classification results:
+
+### Perceptron Results
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px;">
+    <img src="Results/App/perceptronResult1.png" width="200" alt="Perceptron Test 1">
+    <img src="Results/App/perceptronResult2.png" width="200" alt="Perceptron Test 2">
+    <img src="Results/App/perceptronResult3.png" width="200" alt="Perceptron Test 3">
+    <img src="Results/App/perceptronResult4.png" width="200" alt="Perceptron Test 4">
+    <img src="Results/App/perceptronResult5.png" width="200" alt="Perceptron Test 5">
+    <img src="Results/App/perceptronResult6.png" width="200" alt="Perceptron Test 6">
+    <img src="Results/App/perceptronResult7.png" width="200" alt="Perceptron Test 7">
+    <img src="Results/App/perceptronResult8.png" width="200" alt="Perceptron Test 8">
+    <img src="Results/App/perceptronResult9.png" width="200" alt="Perceptron Test 9">
+    <img src="Results/App/perceptronResult10.png" width="200" alt="Perceptron Test 10">
+    <img src="Results/App/perceptronResult11.png" width="200" alt="Perceptron Test 11">
+    <img src="Results/App/perceptronResult12.png" width="200" alt="Perceptron Test 12">
+    <img src="Results/App/perceptronResult13.png" width="200" alt="Perceptron Test 13">
+    <img src="Results/App/perceptronResult14.png" width="200" alt="Perceptron Test 14">
+    <img src="Results/App/perceptronResult15.png" width="200" alt="Perceptron Test 15">
+    <img src="Results/App/perceptronResult16.png" width="200" alt="Perceptron Test 16">
+    <img src="Results/App/perceptronResult17.png" width="200" alt="Perceptron Test 17">
+    <img src="Results/App/perceptronResult18.png" width="200" alt="Perceptron Test 18">
+    <img src="Results/App/perceptronResult19.png" width="200" alt="Perceptron Test 19">
+    <img src="Results/App/perceptronResult20.png" width="200" alt="Perceptron Test 20">
+    <img src="Results/App/perceptronResult21.png" width="200" alt="Perceptron Test 21">
+    <img src="Results/App/perceptronResult22.png" width="200" alt="Perceptron Test 22">
+    <img src="Results/App/perceptronResult23.png" width="200" alt="Perceptron Test 23">
+    <img src="Results/App/perceptronResult24.png" width="200" alt="Perceptron Test 24">
+    <img src="Results/App/perceptronResult25.png" width="200" alt="Perceptron Test 25">
   </div>
 </div>
+
+### SVM Results
+
+<div align="center">
+  <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px;">
+    <img src="Results/App/svmResult1.png" width="200" alt="SVM Test 1">
+    <img src="Results/App/svmResult2.png" width="200" alt="SVM Test 2">
+    <img src="Results/App/svmResult3.png" width="200" alt="SVM Test 3">
+    <img src="Results/App/svmResult4.png" width="200" alt="SVM Test 4">
+    <img src="Results/App/svmResult5.png" width="200" alt="SVM Test 5">
+    <img src="Results/App/svmResult6.png" width="200" alt="SVM Test 6">
+    <img src="Results/App/svmResult7.png" width="200" alt="SVM Test 7">
+    <img src="Results/App/svmResult8.png" width="200" alt="SVM Test 8">
+    <img src="Results/App/svmResult9.png" width="200" alt="SVM Test 9">
+    <img src="Results/App/svmResult10.png" width="200" alt="SVM Test 10">
+    <img src="Results/App/svmResult11.png" width="200" alt="SVM Test 11">
+    <img src="Results/App/svmResult12.png" width="200" alt="SVM Test 12">
+    <img src="Results/App/svmResult13.png" width="200" alt="SVM Test 13">
+    <img src="Results/App/svmResult14.png" width="200" alt="SVM Test 14">
+    <img src="Results/App/svmResult15.png" width="200" alt="SVM Test 15">
+    <img src="Results/App/svmResult16.png" width="200" alt="SVM Test 16">
+    <img src="Results/App/svmResult17.png" width="200" alt="SVM Test 17">
+    <img src="Results/App/svmResult18.png" width="200" alt="SVM Test 18">
+    <img src="Results/App/svmResult19.png" width="200" alt="SVM Test 19">
+    <img src="Results/App/svmResult20.png" width="200" alt="SVM Test 20">
+    <img src="Results/App/svmResult21.png" width="200" alt="SVM Test 21">
+    <img src="Results/App/svmResult22.png" width="200" alt="SVM Test 22">
+    <img src="Results/App/svmResult23.png" width="200" alt="SVM Test 23">
+    <img src="Results/App/svmResult24.png" width="200" alt="SVM Test 24">
+    <img src="Results/App/svmResult25.png" width="200" alt="SVM Test 25">
+  </div>
+</div>
+
+## License
+
+This project is licensed under the MIT License.
+
+```
+MIT License
+
+Copyright (c) 2024 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+```
+
+The dataset used in this project is from Kaggle and is subject to its own licensing terms. Please refer to the [original dataset](https://www.kaggle.com/datasets/sodiqismoilov/gender) for more information.
