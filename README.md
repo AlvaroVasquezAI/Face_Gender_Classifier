@@ -508,13 +508,12 @@ Face-Gender-Classifier/
 │
 ├── Scripts/                         # Source code
 │   ├── customTools.py              # Feature extraction and model classes
-│   │   ├── class Image            # Feature extraction implementation
-│   │   └── class Perceptron      # Neural network implementation
-│   │
-│   ├── train_perceptron.ipynb     # Detailed notebook for perceptron
-│   └── train_svm.ipynb            # Detailed notebook for svm
+│       ├── class Image            # Feature extraction implementation
+│       └── class Perceptron      # Neural network implementation
 │
 ├── app.py                          # GUI application
+├── Perceptron.ipynb                # Detailed notebook for perceptron
+├── SVM.ipynb                       # Detailed notebook for svm
 ├── requirements.txt                # Project dependencies
 └── README.md
 </pre>
