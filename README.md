@@ -390,10 +390,10 @@ The GUI application provides an intuitive interface for testing both models on r
 
 <div align="center">
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-    <img src="docs/images/gui_example1.png" width="400" alt="Man Classification Example">
-    <img src="docs/images/gui_example2.png" width="400" alt="Woman Classification Example">
-    <img src="docs/images/gui_example3.png" width="400" alt="Group Photo Classification">
-    <img src="docs/images/gui_example4.png" width="400" alt="Real-time Processing">
+    <img src="Results/App/perceptronResult1.png" width="400" alt="Man Classification Example">
+    <img src="Results/App/svmResult2.png" width="400" alt="Woman Classification Example">
+    <img src="Results/App/perceptronResult11.png" width="400" alt="Woman Classification Complex Example">
+    <img src="Results/App/svmResult12.png" width="400" alt="Man Classification Complex Example">
   </div>
 </div>
 
@@ -412,13 +412,13 @@ Comprehensive evaluation of both models' performance through various metrics and
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
     <div>
       <h4>Perceptron Analysis</h4>
-      <img src="docs/images/perceptron_confusion_matrix.png" width="400" alt="Perceptron Confusion Matrix">
-      <img src="docs/images/perceptron_learning_curves.png" width="400" alt="Perceptron Learning Curves">
+      <img src="Results/Perceptron/confusion_matrix_perceptron.png" width="400" alt="Perceptron Confusion Matrix">
+      <img src="Results/Perceptron/perceptron_results.png" width="400" alt="Perceptron Results">
     </div>
     <div>
       <h4>SVM Analysis</h4>
-      <img src="docs/images/svm_confusion_matrix.png" width="400" alt="SVM Confusion Matrix">
-      <img src="docs/images/svm_hyperparameter_analysis.png" width="400" alt="SVM Hyperparameter Analysis">
+      <img src="docs/images/confusion_matrix_svm.png" width="400" alt="SVM Confusion Matrix">
+      <img src="docs/images/svm_results.png" width="400" alt="SVM Results">
     </div>
   </div>
 </div>
@@ -478,45 +478,47 @@ Comprehensive evaluation of both models' performance through various metrics and
 The analysis shows that while both models achieve comparable performance, the Perceptron demonstrates slightly better generalization capabilities, making it the preferred choice for this specific gender classification task.
 
 ## Project Structure
+
+<pre>
 Face-Gender-Classifier/
+├── Models/                          # Saved trained models
+│   ├── best_perceptron_model.pth   # Trained Perceptron model
+│   ├── perceptron_scaler.pkl       # Scaler for Perceptron features
+│   ├── best_svm_model.pkl          # Trained SVM model
+│   └── svm_scaler.pkl              # Scaler for SVM features
 │
-├── Models/ # Saved trained models
-│ ├── best_perceptron_model.pth # Trained Perceptron model
-│ ├── perceptron_scaler.pkl # Scaler for Perceptron features
-│ ├── best_svm_model.pkl # Trained SVM model
-│ └── svm_scaler.pkl # Scaler for SVM features
+├── Results/                         # Training results and visualizations
+│   ├── Perceptron/
+│   │   ├── confusion_matrix_perceptron.png
+│   │   ├── hyperparameters_metrics_perceptron.png
+│   │   ├── loss_accuracy_perceptron.png
+│   │   └── perceptron_results.txt
+│   │
+│   ├── SVM/
+│   │   ├── confusion_matrix_svm.png
+│   │   ├── hyperparameters_metrics_svm.png
+│   │   ├── correlation_analysis_svm.png
+│   │   └── svm_results.txt
+│   │
+│   └── App/
+│       ├── app.png
+│       ├── perceptronResult1.png
+│       ├── svmResult1.png
+│       ├── perceptronResult2.png
+│       └── svmResult2.png
 │
-├── Results/ # Training results and visualizations, and app results
-│ ├── Perceptron/
-│ │ ├── confusion_matrix_perceptron.png
-│ │ ├── hyperparameters_metrics_perceptron.png
-│ │ ├── loss_accuracy_perceptron.png
-│ │ └── perceptron_results.txt
-│ │
-│ └── SVM/
-│ ├── confusion_matrix_svm.png
-│ ├── hyperparameters_metrics_svm.png
-│ ├── correlation_analysis_svm.png
-│ └── svm_results.txt
-│ │
-│ └── App/
-│ ├── app.png
-│ ├── perceptronResult1.png
-│ ├── svmResult1.png
-│ └── perceptronResult2.png
-│ ├── svmResult2.png
+├── Scripts/                         # Source code
+│   ├── customTools.py              # Feature extraction and model classes
+│   │   ├── class Image            # Feature extraction implementation
+│   │   └── class Perceptron      # Neural network implementation
+│   │
+│   ├── train_perceptron.ipynb     # Detailed notebook for perceptron
+│   └── train_svm.ipynb            # Detailed notebook for svm
 │
-├── Scripts/ # Source code
-│ ├── customTools.py # Feature extraction and model classes
-│ │ ├── class Image # Feature extraction implementation
-│ │ └── class Perceptron # Neural network implementation
-│ │
-│ ├── train_perceptron.ipynb # Detailed notebook for perceptron
-│ └── train_svm.ipynb # Detailed notebook for svm
-│
-├── app.py # GUI application
-├── requirements.txt # Project dependencies
+├── app.py                          # GUI application
+├── requirements.txt                # Project dependencies
 └── README.md
+</pre>
 
 ### Key Components
 
