@@ -480,7 +480,24 @@ The analysis shows that while both models achieve comparable performance, the Pe
 
 <pre>
 Face-Gender-Classifier/
-├── Models/                          # Saved trained models
+├── Data/                          
+│   ├── Man/
+│   │   ├── face_0.jpg
+│   │   ├── face_1.jpg
+│   │   ├── face_2.jpg
+│   │   └── ...
+│   │
+│   ├── Woman/
+│   │   ├── face_0.jpg
+│   │   ├── face_1.jpg
+│   │   ├── face_2.jpg
+│   │   └── ...
+│   │
+│   ├── Data.csv                    # All data in a CSV (image paths only) and other specifications 
+│   ├── test_dataset.csv            # Test set (20%)
+│   ├── train_dataset.csv           # Train set (80%)
+│
+├── Models/                         # Saved trained models
 │   ├── best_perceptron_model.pth   # Trained Perceptron model
 │   ├── perceptron_scaler.pkl       # Scaler for Perceptron features
 │   ├── best_svm_model.pkl          # Trained SVM model
