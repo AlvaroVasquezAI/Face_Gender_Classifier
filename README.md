@@ -402,7 +402,6 @@ Key Features:
 - Support for both local and web images
 - Manual face selection for precise testing
 - Side-by-side model comparison
-- Visualization of extracted features
 
 ### 4. Performance Analysis
 
@@ -417,8 +416,8 @@ Comprehensive evaluation of both models' performance through various metrics and
     </div>
     <div>
       <h4>SVM Analysis</h4>
-      <img src="docs/images/confusion_matrix_svm.png" width="400" alt="SVM Confusion Matrix">
-      <img src="docs/images/svm_results.png" width="400" alt="SVM Results">
+      <img src="Results/SVM/confusion_matrix_svm.png" width="400" alt="SVM Confusion Matrix">
+      <img src="Results/SVM/svm_results.png" width="400" alt="SVM Results">
     </div>
   </div>
 </div>
