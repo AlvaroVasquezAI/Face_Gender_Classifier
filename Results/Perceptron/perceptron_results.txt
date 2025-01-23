@@ -1,0 +1,18 @@
+Best Model Performance
+
+Parameters:
+alpha: 0.01
+max_iter: 1000
+tol: 0.0001
+
+Training Metrics:
+Accuracy: 0.9496
+Precision: 0.9563
+Recall: 0.9405
+F1-Score: 0.9483
+
+Test Metrics:
+Accuracy: 0.9048
+Precision: 0.9178
+Recall: 0.8855
+F1-Score: 0.9013

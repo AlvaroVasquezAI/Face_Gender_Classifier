@@ -1,0 +1,32 @@
+Best Model Performance
+
+Parameters:
+C: 0.001
+kernel: linear
+gamma: scale
+
+Training Metrics:
+Accuracy: 0.9518
+Precision: 0.9606
+Recall: 0.9405
+F1-Score: 0.9504
+
+Test Metrics:
+Accuracy: 0.8983
+Precision: 0.9167
+Recall: 0.8722
+F1-Score: 0.8939
+
+Confusion Matrix:
+[[217  18]
+ [ 29 198]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         Man       0.88      0.92      0.90       235
+       Woman       0.92      0.87      0.89       227
+
+    accuracy                           0.90       462
+   macro avg       0.90      0.90      0.90       462
+weighted avg       0.90      0.90      0.90       462
