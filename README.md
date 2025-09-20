@@ -1,6 +1,29 @@
-# Face Gender Classifier
+<br/>
+<p align="center">
+  <h1 align="center">Face Gender Classifier</h1>
 
-A comprehensive **machine learning project** that implements **gender classification from facial images** using two distinct approaches: a **Neural Network Perceptron** and a **Support Vector Machine (SVM)**. The project was developed and evaluated on a carefully curated and balanced dataset comprising **2,307 facial images** (1,173 men and 1,134 women), with an **80-20 split for training and testing**.
+  <p align="center">
+    using two distinct approaches: a Neural Network Perceptron and a Support Vector Machine (SVM).
+    <br />
+  </p>
+</p>
+<!-- TECHNOLOGY BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/CustomTkinter-347AB6?style=for-the-badge&logoColor=white" alt="CustomTkinter">
+</p>
+
+A **machine learning project** that implements **gender classification from facial images** using two distinct approaches: a **Neural Network Perceptron** and a **Support Vector Machine (SVM)**. The project was developed and evaluated on a carefully curated and balanced dataset comprising **2,307 facial images** (1,173 men and 1,134 women), with an **80-20 split for training and testing**.
+
+<div align="center">
+  <img src="Results/App/01.png" width="480" alt="Man Classification Example">&nbsp;
+  <img src="Results/App/02.png" width="480" alt="Woman Classification Example">
+</div>
 
 Both models demonstrate robust performance, with the Perceptron achieving 94.96% accuracy on training and **90.48%** on testing, while the SVM reached 95.18% on training and **89.83%** on testing. This high performance is achieved through an extensive feature extraction pipeline that combines:
 - Basic color analysis (RGB channels, statistical measures, and histograms)
@@ -14,11 +37,6 @@ The project includes a user-friendly **GUI application** built with CustomTkinte
 - Process images through both models simultaneously
 - Compare prediction results and model confidence
 
-<div align="center">
-  <img src="Results/App/perceptronResult1.png" width="1000" alt="Man Classification Example">
-</div>
-
-This tool bridges the gap between controlled environment testing and real-world application, providing insights into both models' generalization capabilities and practical effectiveness in gender classification tasks.
 ## Table of Contents
 - [Overview](#overview)
 - [Project Structure](#project-structure)
@@ -835,18 +853,4 @@ To evaluate the models' performance in real-world scenarios, we tested both the 
 
 ## License
 
-This project is licensed under the MIT License.
-
-```
-MIT License
-
-Copyright (c) 2024 [Your Name]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
-```
-
-The dataset used in this project is from Kaggle and is subject to its own licensing terms. Please refer to the [original dataset](https://www.kaggle.com/datasets/sodiqismoilov/gender) for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
